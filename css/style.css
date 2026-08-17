@@ -201,8 +201,136 @@ nav {
 .songFooter i:hover {
   scale: 1.2;
   cursor: pointer;
+
 }
-.pause {
-  position: absolute;
-  display: none;
+/* Tablet */
+@media (max-width: 1024px) {
+  .heroSectionDiv p,
+  .heroSectionDiv span {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .musicContainer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .musicContainer .musicLeft,
+  .musicRight {
+    width: 100%;
+  }
+
+  .musicLeft {
+    height: 35vh;
+  }
+
+  .musicRight {
+    min-height: 65vh;
+  }
+
+  .songCard {
+    width: 50vw;
+    height: 50vh;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  nav {
+    padding: 0.5rem 1rem;
+  }
+
+  .navLeft h1 {
+    font-size: 1.2rem;
+  }
+
+  .navLeft i {
+    font-size: 1.2rem;
+  }
+
+  .navRight button {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .heroSectionDiv {
+    width: 90%;
+  }
+
+  .heroSectionDiv p,
+  .heroSectionDiv span {
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .musicContainer {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  .musicContainer .musicLeft {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .musicRight {
+    width: 100%;
+    min-height: 70vh;
+  }
+
+  .yourLibrary i,
+  .yourLibrary p {
+    font-size: 1.2rem;
+  }
+
+  .songShow ul li p {
+    font-size: 1rem;
+  }
+
+  .songCard {
+    width: 80vw;
+    height: 40vh;
+    margin-top: 1rem;
+  }
+
+  .songTextPera {
+    font-size: 1rem;
+  }
+
+  .songFooter {
+    font-size: 1.2rem;
+    gap: 1rem;
+    padding: 0.8rem 0;
+  }
+
+  .backButton {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .heroSectionDiv p,
+  .heroSectionDiv span {
+    font-size: 5rem;
+  }
+
+  .songCard {
+    width: 90vw;
+    height: 35vh;
+  }
+
+  .songFooter {
+    font-size: 1rem;
+  }
+
+  .songTextPera {
+    font-size: 0.9rem;
+  }
 }
