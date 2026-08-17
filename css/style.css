@@ -1,26 +1,208 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html , body{
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
-main{
-    height: 100%;
-    width: 100%;
-}
-
-.hero{
-    height: 100vh;
-    width: 100%;
-    background-image: url("../image/CoverImage.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
- 
-
+main {
+  height: 100%;
+  width: 100%;
 }
 
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../image/CoverImage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+nav {
+  background-color: rgba(21, 21, 21, 0.297);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  box-sizing: border-box;
+}
+.navLeft {
+  display: flex;
+  align-items: center;
+  color: #bcb6d3;
+  gap: 1rem;
+}
+.navLeft i {
+  font-size: 1.5rem;
+}
+.navLeft h1 {
+  font-style: italic;
+}
+.navRight button {
+  border: 0.1rem solid #bcb6d3;
+  border-radius: 1rem;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  font-weight: 800;
+  background-color: transparent;
+  color: #bcb6d3;
+  transition: all 0.3s linear;
+}
+
+.navRight button:hover {
+  scale: 0.95;
+  box-shadow: 0 0 1rem #93b9f2;
+  cursor: pointer;
+  color: #93b9f2;
+}
+
+.heroSectionDiv {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heroSectionDiv p {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: #efeef4;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.heroSectionDiv span {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: #efeef4;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.music {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    to right bottom,
+    #787ebe,
+    #5d61a1,
+    #5b5183,
+    #08092b
+  );
+  position: absolute;
+  display: none;
+  transition: all 0.5s linear;
+}
+.musicContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+.musicContainer .musicLeft {
+  height: 100%;
+  width: 30vw;
+  background-color: rgba(30, 30, 30, 0.267);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.musicRight {
+  height: 100%;
+  width: 70vw;
+  background-color: rgba(30, 30, 30, 0.267);
+  border-radius: 1rem;
+  position: relative;
+  padding: 0.5rem;
+}
+.backButton{
+    padding:  0.2rem 1rem;
+    border-radius: 1rem;
+    border: 0.1rem solid white;
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;    
+    background-color: transparent;
+ transition: all 0.5s linear;
+}
+
+.backButton:hover{
+    scale: 0.95;    
+    cursor: pointer;
+    box-shadow:  0 0 1rem #93b9f2;
+ opacity: 0.8;
+}
+.yourLibrary {
+  display: flex;
+  align-items: center;
+}
+.yourLibrary i,
+.yourLibrary p {
+  color: #efeef4;
+  font-size: 1.7rem;
+}
+
+.songShow ul li {
+  list-style: square;
+  margin: 1rem;
+  color: white;
+}
+.songShow ul li p {
+  font-size: 1.3rem;
+  color: white;
+}
+.songShow ul li p:hover {
+  font-size: 1.3rem;
+  color: #93b9f2;
+  cursor: pointer;
+}
+.songCard {
+  width: 30vw;
+  height: 70vh;
+  margin: auto;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.songCard img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.songTextPera {
+  font-size: 1.3rem;
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+.songFooter {
+  width: 100%;
+  background-color: #93b9f2;
+  padding: 0.5rem 0rem;
+  position: absolute;
+  left: 0%;
+  bottom: 1%;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.songFooter i:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+.pause {
+  position: absolute;
+  display: none;
+}

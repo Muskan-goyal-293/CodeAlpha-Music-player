@@ -1,33 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music player</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <main>
       <section class="hero">
         <nav>
-            <div class="left">
-                <img src="" alt="">
-            </div>
-            <div class="right">
-                <button>Home</button>
-            </div>
+          <div class="navLeft">
+            <i class="fa-brands fa-deezer"></i>
+            <h1>Music</h1>
+          </div>
+          <div class="navRight">
+            <button class="homeButton">Home</button>
+          </div>
         </nav>
 
-
-
-
+        <div class="heroSectionDiv">
+          <p>IT'S YOUR TIME</p>
+        </div>
       </section>
 
+      <section class="music">
+        <div class="musicContainer">
+          <div class="musicLeft">
+            <div class="yourLibrary">
+              <i class="fa-solid fa-grip-lines-vertical"></i>
+              <p>Your Library</p>
+            </div>
+            <div class="songShow">
+              <ul>
+                <audio src=""></audio>
+              </ul>
+            </div>
+          </div>
 
+          <div class="musicRight">
+            <button class="backButton">Back</button>
+            <div class="songCard">
+              <img
+                src="https://i.pinimg.com/1200x/a1/5a/d2/a15ad207055cb0dc3ec1d3d5b3565457.jpg"
+                alt=""
+              />
+              <p class="songTextPera">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
+                reiciendis earum voluptates iusto tempora voluptate eligendi,
+                cum accusamus! Saepe nulla alias nemo quae distinctio, repellat
+                provident sint pariatur illum dolore?
+              </p>
+            </div>
 
+            <div class="songFooter">
+              <div class="pri"><i class="fa-solid fa-chevron-left"></i></div>
+              <div class="play"><i class="fa-solid fa-circle-play"></i></div>
+              <div class="pause">
+                <i class="fa-regular fa-circle-pause"></i>
+              </div>
+              <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
